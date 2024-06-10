@@ -1,5 +1,5 @@
 /* #region Base */
-body {
+/* body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     font-size: 14px;
@@ -47,21 +47,21 @@ input {
 
 address {
     font-style: normal;
-}
+} */
 /* #endregion Base */
 
 /* #region Component */
 
 
-.container { 
+/* .container { 
 max-width: 1158px; 
 margin: 0 auto;
 padding: 0 15px;
 outline: 2px solid red;
     outline-offset: -2px;
-} 
+}  */
 
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -72,7 +72,7 @@ outline: 2px solid red;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
 
 /* #endregion Component */
 
@@ -677,7 +677,6 @@ margin-bottom: 16px;
     width: 100%;
     border-radius: 4px;
     border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
-    padding: 24px 24px 24px 62px;
     background-color: transparent;
     padding-left: 38px;
     outline: transparent;
@@ -708,7 +707,7 @@ margin-bottom: 16px;
 }
 
 .modal-textarea-wrapper {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .modal-textarea {

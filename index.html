@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="goit-markup-hw-01" />
-    <title>goit-markup-hw-02</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="goit-markup-hw-06" />
+    <title>goit-markup-hw-06</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
@@ -15,7 +16,11 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
   <body>
@@ -26,6 +31,15 @@
           <a href="./index.html" class="logo"
             >Web<span class="logo-head">Studio</span></a
           >
+          <button
+            class="menu-btn js-menu-btn"
+            type="button"
+            aria-label="Open menu button"
+          >
+            <svg class="menu-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="header-nav-list">
             <li class="header-nav-item">
               <a class="header-nav-link current color-item" href="./index.html"
@@ -616,7 +630,7 @@
     <!-- #endregion footer -->
 
     <!-- #region Modal -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <!-- is-open -->
       <div class="modal">
         <button class="close-modal-btn" type="button">
@@ -640,7 +654,7 @@
                 placeholder=" "
                 pattern="[A-Za-z0-9]{6,}"
               />
-              <svg class="modal-filed-icon" width="18" height="24">
+              <svg class="modal-filed-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
             </div>
@@ -716,5 +730,97 @@
     </div>
 
     <!-- #endregion Modal -->
+
+    <!-- #region Mobile menu -->
+    <div class="menu-container">
+      <button class="menu-btn js-menu-btn" aria-label="Close menu button">
+        <svg class="menu-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-list">
+        <li class="menu-list-item">
+          <a href="./index.html" class="menu-list-link active">Studio</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#portfolio" class="menu-list-link">Portfolio</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="" class="menu-list-link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="menu-contacts">
+        <li class="menu-contacts-item">
+          <a class="menu-contacts-link" href="tel:+110001111111">
+            +11 (000) 111-11-11
+          </a>
+        </li>
+        <li class="menu-contacts-item">
+          <a class="menu-contacts-link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="socials">
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram link"
+          >
+            <svg height="24" width="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter link"
+          >
+            <svg height="24" width="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook link"
+          >
+            <svg height="24" width="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linkedin link"
+          >
+            <svg height="24" width="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- #endregion -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
